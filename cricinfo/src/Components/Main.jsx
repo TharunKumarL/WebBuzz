@@ -12,9 +12,7 @@ const Main = () => {
   ];
 
   const handleRegister = (event) => {
-    setSelectedEvent(event);
-    // Implement registration logic here
-    alert(`Registered for ${event.title} on ${event.date}`);
+    setSelectedEvent(event);;
   };
 
   return (
