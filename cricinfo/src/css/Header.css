@@ -1,13 +1,13 @@
-.header {
+/* .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2f9d4e; /* Match the green background */
+    background-color: #2f9d4e; 
     padding: 10px 20px;
   }
   
   .logo img {
-    height: 60px; /* Adjust size of the logo */
+    height: 60px; 
   }
   
   .nav ul {
@@ -30,7 +30,7 @@
   }
   
   .nav ul li a:hover {
-    background-color: #ffffff33; /* Light hover effect */
+    background-color: #ffffff33; 
     border-radius: 5px;
   }
   
@@ -47,7 +47,7 @@
   }
   
   .search button {
-    background-color: #4caf50; /* Match button color */
+    background-color: #4caf50; 
     color: white;
     border: none;
     padding: 8px 10px;
@@ -58,5 +58,87 @@
   
   .search button:hover {
     background-color: #45a049;
+  }
+   */
+
+
+   .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f7a3f; /* Darker green for a more elegant look */
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    height: 50px;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo img:hover {
+    transform: scale(1.05); /* Slight hover effect on logo */
+  }
+  
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav ul li a:hover {
+    background-color: #ffffff44; /* Softer hover effect */
+    color: #1f7a3f; /* Green font on hover */
+    border-radius: 8px;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search input {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    width: 200px;
+    transition: width 0.4s ease;
+  }
+  
+  .search input:focus {
+    width: 250px; /* Expand on focus */
+    border-color: #4caf50;
+  }
+  
+  .search button {
+    background-color: #4caf50; /* Green color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search button:hover {
+    background-color: #388e3c;
+  }
+  
+  .search button i {
+    font-size: 16px;
   }
   
